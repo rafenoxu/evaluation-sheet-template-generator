@@ -23,7 +23,7 @@ public class PdfSaver {
         try {
             extractPage().save(new File("src/main/resources/sheet.pdf"));
         } catch (IOException e) {
-            System.out.println("2 lol " + e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 

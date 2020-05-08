@@ -1,5 +1,7 @@
 package com.skotnicki.rafal;
 
+import java.io.IOException;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,5 +18,7 @@ public class Main {
             pdfSaver.savePage();
         }
 
+        PdfRemover pdfRemover = new PdfRemover("src/main/resources/sheet.pdf");
+        pdfRemover.removeHeader();
     }
 }
